@@ -121,13 +121,13 @@ public class playwrighttest1 {
         String expectedErrorMsg = "Please fill out this field.";
         softAssert.assertEquals(validationMsg, expectedErrorMsg, "Error message not as expected");
         System.out.println("Step -6 ");
-        page.fill("#name", "Aishwarya Deshmukh");
+        page.fill("#name", "Surendra Kumar");
         System.out.println("Step -7 ");
-        page.fill("//input[@placeholder='Email']", "aishwarya@gmail.com");
+        page.fill("//input[@placeholder='Email']", "kumarsurendra@gmail.com");
         System.out.println("Step -8 ");
         page.fill("//input[@placeholder='Password']", "Vikas1234");
-        page.fill("//input[@placeholder='Company']", "Persistent");
-        page.fill("#websitename", "www.persistent.com");
+        page.fill("//input[@placeholder='Company']", "google");
+        page.fill("#websitename", "www.google.com");
         page.selectOption("select[name='country']", new SelectOption().setLabel("United States"));
         page.fill("#inputCity", "New York");
         page.fill("#inputAddress1", "HJ, CH SHJ");
